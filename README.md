@@ -10,7 +10,7 @@ In a triangulated polygon, a diagonal is an edge shared by two triangles. These 
 To flip a diagonal, simply left click on it.
 
 # To-do:
-1. Create config file for users to input the number of sides and size of the polygon.
-2. Add instructions for installation.
-3. Recreate program for the web.
-4. Clean-up the code
+- Create config file for users to input the number of sides and size of the polygon.
+- Add instructions for installation.
+- Recreate program for the web.
+- Clean-up the code
