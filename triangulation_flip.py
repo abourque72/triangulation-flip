@@ -91,6 +91,22 @@ class RegularPolygonApp:
             
 
 if __name__ == "__main__":
+    cfg_sides = 9
+    cfg_size = 400
+    cfg = 'flip_config.txt'
+    try:
+        with open(cfg, 'r') as file:
+            for line in file:
+                line_split = line.split('=')
+                if line_split[0] == 'sides':
+                    cfg_sides = int(line_split[1])
+                elif line_split[0] == 'size':
+                    cfg_size = int(line_split[1])
+    except FileNotFoundError:
+        print("Config file not found. Please create a flip_config.txt file and format as per the instructions on GitHub.")
+    except Exception as e:
+        print("An error occurred: ", e)
+    
     root = tk.Tk()
-    app = RegularPolygonApp(root, sides=9, size=400)
+    app = RegularPolygonApp(root, sides=cfg_sides, size=cfg_size)
     root.mainloop()
