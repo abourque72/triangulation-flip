@@ -11,7 +11,7 @@ There is a config file, which must be called flip_config.txt, and must be placed
 The config file has two options:
 
 - sides: the number of sides of the polygon
-- size: the radius (presumably) in pixels of the polygon
+- size: twice the radius (presumably) in pixels of the polygon
 
 The name of the options must stay as is given above, and the formatting must also stay as in the config file given in the repository. 
 Namely, the format must have the name and the number directly connected by the equal sign, no spaces!
